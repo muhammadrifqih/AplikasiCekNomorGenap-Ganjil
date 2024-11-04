@@ -106,18 +106,18 @@ public class CekNomorGenapGanjilFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String input = jTextField1.getText();
-         if (input.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Input tidak boleh kosong.");
-            return;
-        }
-        try {
-            int angka = Integer.parseInt(input);
-            String hasil = (angka % 2 == 0) ? "Genap" : "Ganjil";
+        
+if (input.isEmpty()) {
+    JOptionPane.showMessageDialog(this, "Input tidak boleh kosong.");
+} else if (!input.matches("\\d+")) {
+    JOptionPane.showMessageDialog(this, "Input tidak valid. Masukkan angka yang benar.");
+} else {
+    int angka = Integer.parseInt(input);
+    String hasil = (angka % 2 == 0) ? "Genap" : "Ganjil";
+    
+    jLabel3.setText("Angka " + angka + " adalah " + hasil);
+}
 
-            jLabel3.setText("Angka " + angka + " adalah " + hasil );
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Input tidak valid. Masukkan angka yang benar.");
-        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
