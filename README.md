@@ -8,12 +8,8 @@ Kelas : 5A Reg BJB
 
 Hasil Screnshoot
 
-![image](https://github.com/user-attachments/assets/c772091b-0a22-4a20-8a72-92c2118f8252)
-
-![image](https://github.com/user-attachments/assets/c3b2b189-3d4c-4846-839f-f90fafa6a42a)
-
-![image](https://github.com/user-attachments/assets/f64e3a24-1460-42b1-ae15-3a0925fa14a8)
-
-![image](https://github.com/user-attachments/assets/468260d4-408e-468a-bcb3-cc5bfad23fe9)
-
-![image](https://github.com/user-attachments/assets/c8c835c4-269d-4e8b-b3e4-573eb2821899)
+![Screenshot (579)](https://github.com/user-attachments/assets/b1568a16-9e68-48ac-afc6-1edbe4fb6e9d)
+![Screenshot (578)](https://github.com/user-attachments/assets/35105b04-b738-4a15-a523-78ea8f109567)
+![Screenshot (577)](https://github.com/user-attachments/assets/e0334643-407d-4ab7-a5cd-e28c35a9b194)
+![Screenshot (581)](https://github.com/user-attachments/assets/452f9907-833d-4042-bff8-31c146e661b8)
+![Screenshot (580)](https://github.com/user-attachments/assets/6d0458b5-2c8e-4350-a7b4-9f754e11d140)
