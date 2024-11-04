@@ -106,18 +106,28 @@ public class CekNomorGenapGanjilFrame extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String input = jTextField1.getText();
-        
-if (input.isEmpty()) {
-    JOptionPane.showMessageDialog(this, "Input tidak boleh kosong.");
-} else if (!input.matches("\\d+")) {
-    JOptionPane.showMessageDialog(this, "Input tidak valid. Masukkan angka yang benar.");
-} else {
-    int angka = Integer.parseInt(input);
-    String hasil = (angka % 2 == 0) ? "Genap" : "Ganjil";
-    
-    jLabel3.setText("Angka " + angka + " adalah " + hasil);
-}
 
+        if (input.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Input tidak boleh kosong.");
+        } else if (!input.matches("\\d+")) {
+            JOptionPane.showMessageDialog(this, "Input tidak valid. Masukkan angka yang benar.");
+        } else {
+            int angka = Integer.parseInt(input);
+            String hasil = (angka % 2 == 0) ? "Genap" : "Ganjil";
+
+            // Cek bilangan prima
+            boolean isPrime = true;
+            if (angka < 2) isPrime = false;
+            for (int i = 2; i <= Math.sqrt(angka); i++) {
+                if (angka % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            jLabel3.setText("Angka " + angka + " adalah " + hasil +
+                               (isPrime ? " dan Bilangan Prima" : " dan Bukan Bilangan Prima"));
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
